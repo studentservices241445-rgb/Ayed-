@@ -1,0 +1,18 @@
+{
+  "name": "أكاديمية عايد — STEP المكثفة 2026",
+  "short_name": "STEP عايد",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B1220",
+  "theme_color": "#0B1220",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

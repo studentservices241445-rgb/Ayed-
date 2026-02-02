@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0B1220">
+  <title>أكاديمية عايد — دورة STEP المكثفة 2026</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="mark"></div>
+        <div><b>أكاديمية عايد الرسمية</b><span>دورة STEP المكثفة 2026</span></div>
+      </a>
+      <button class="btn iconbtn" id="menuBtn" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="panel">
+    <div class="top"><b>القائمة</b><button class="btn small" id="drawerClose">إغلاق</button></div>
+    <a href="index.html">الرئيسية</a>
+    <a href="course-content.html">محتوى الدورة</a>
+    <a href="step-guide.html">دليل STEP</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="testimonials.html">آراء الطلاب</a>
+    <a href="support.html">الدعم</a>
+    <a href="register.html">التسجيل</a>
+    <a href="terms.html">الشروط</a>
+    <a href="privacy.html">الخصوصية</a>
+    <a href="refund.html">الاسترجاع</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/site-data.js"></script>
+<script src="assets/app.js"></script>
+
+<main class="container" style="padding:18px 0 20px">
+  <div class="card pad">
+    <div class="badge">تدريب عملي • تنظيم كامل • 2026</div>
+    <h1 class="h1">دورة STEP المكثفة 2026</h1>
+    <p class="p">دورة مركزة للطلاب اللي يبغون خطة واضحة وتدريب عملي على القواعد والقراءة والاستماع والمفردات — بدون تشتيت.</p>
+
+    <div class="grid two" style="margin-top:14px">
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <b>السعر الحالي</b>
+        <div style="margin-top:6px;font-size:22px"><b id="priceNow">—</b> <span style="color:var(--muted2);text-decoration:line-through" id="oldPrice">—</span></div>
+        <div class="p" id="discountNote">الخصم متاح لك لمدة <b id="countdown">—</b> (يبدأ من أول زيارة).</div>
+        <div class="p">المقاعد المتاحة: <b id="seatsLeft">—</b></div>
+        <div class="p" id="seatsNote" style="margin-top:0"></div>
+        <a class="btn gold" href="register.html" style="margin-top:10px">سجّل الآن</a>
+      </div>
+
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <b>وش بتاخذ داخل الدورة؟</b>
+        <div class="p" style="margin-top:6px">- محاضرات تمهيدية + تأسيس</div>
+        <div class="p">- Grammar + استثناءات + مراجعات</div>
+        <div class="p">- Reading + استراتيجيات + قطع تدريبية</div>
+        <div class="p">- Listening + نماذج + تدريبات قصيرة</div>
+        <div class="p">- نماذج وحلول + مراجعات أسبوعية</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+          <a class="btn" href="course-content.html">استعرض المحتوى</a>
+          <a class="btn" href="step-guide.html">دليل STEP</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep">
+    <div class="grid three">
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <div class="badge">منظم</div>
+        <b>مسارات محتوى واضحة</b>
+        <div class="p" style="margin-top:6px">شرح وتدريب + ملفات ونماذج (بدون روابط داخل الموقع).</div>
+      </div>
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <div class="badge">عملي</div>
+        <b>نماذج + حلول</b>
+        <div class="p" style="margin-top:6px">تركيز على التطبيق والتحليل بدل الحفظ العشوائي.</div>
+      </div>
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <div class="badge">واضح</div>
+        <b>خطط مذاكرة جاهزة</b>
+        <div class="p" style="margin-top:6px">خطة يوم/3 أيام/7 أيام/15/30/60/90 يوم.</div>
+      </div>
+    </div>
+
+    <hr class="sep">
+    <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+      <b>نقطة مهمة</b>
+      <div class="p" style="margin-top:6px">لو تبغى تعرف مستواك قبل ما تسجل، استخدم برنامج تحديد المستوى المجاني ثم ارجع للتسجيل والصق خطتك (اختياري).</div>
+      <a class="btn" href="register.html">التسجيل</a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div><b>أكاديمية عايد الرسمية</b><div style="margin-top:6px">© 2026 — دورة STEP المكثفة</div></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="course-content.html">المحتوى</a>
+        <a href="register.html">التسجيل</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

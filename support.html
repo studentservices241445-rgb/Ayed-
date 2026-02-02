@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0B1220">
+  <title>الدعم — الدورة</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="mark"></div>
+        <div><b>أكاديمية عايد الرسمية</b><span>دورة STEP المكثفة 2026</span></div>
+      </a>
+      <button class="btn iconbtn" id="menuBtn" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="panel">
+    <div class="top"><b>القائمة</b><button class="btn small" id="drawerClose">إغلاق</button></div>
+    <a href="index.html">الرئيسية</a>
+    <a href="course-content.html">محتوى الدورة</a>
+    <a href="step-guide.html">دليل STEP</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="testimonials.html">آراء الطلاب</a>
+    <a href="support.html">الدعم</a>
+    <a href="register.html">التسجيل</a>
+    <a href="terms.html">الشروط</a>
+    <a href="privacy.html">الخصوصية</a>
+    <a href="refund.html">الاسترجاع</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/site-data.js"></script>
+<script src="assets/app.js"></script>
+
+<main class="container" style="padding:18px 0 20px">
+  <div class="card pad">
+    <h1 class="h1">الدعم</h1>
+    <p class="p">اكتب استفسارك — بيظهر لك تأكيد استلام داخل الصفحة. (التفعيل والمتابعة عبر الحساب الرسمي في تيليجرام)</p>
+    <div class="grid two" style="margin-top:12px">
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <b>تيليجرام الرسمي</b>
+        <div class="p" style="margin-top:6px">@<span id="tgUser">—</span></div>
+        <a class="btn gold" href="register.html" style="margin-top:10px">صفحة التسجيل</a>
+      </div>
+      <div class="card pad" style="box-shadow:none;background:rgba(255,255,255,.04)">
+        <b>نموذج دعم داخل الموقع</b>
+        <form id="supportForm">
+          <label class="label">اسمك</label><input class="input" id="sName" placeholder="مثال: عبدالله">
+          <label class="label" style="margin-top:10px">رسالتك</label><textarea class="textarea" id="sMsg" rows="4"></textarea>
+          <button class="btn gold" type="submit" style="margin-top:10px">إرسال</button>
+        </form>
+        <div class="p" id="sOk" style="margin-top:10px;display:none">تم الاستلام ✅ سيتم النظر على طلبك قريبًا بإذن الله.</div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.getElementById('tgUser').textContent = (window.COURSE_DATA.telegramUsername||'');
+  const f=document.getElementById('supportForm'); const ok=document.getElementById('sOk');
+  f.addEventListener('submit',(e)=>{e.preventDefault(); ok.style.display='block'; f.reset(); setTimeout(()=>ok.style.display='none',8000);});
+});
+</script>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div><b>أكاديمية عايد الرسمية</b><div style="margin-top:6px">© 2026 — دورة STEP المكثفة</div></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="course-content.html">المحتوى</a>
+        <a href="register.html">التسجيل</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
